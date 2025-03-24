@@ -1,0 +1,11 @@
+.QuizBlock {
+  display: flex;
+  &__left {
+    max-width: 30%;
+    flex: 1;
+  }
+  &__right {
+    max-width: 70%;
+    flex: 1;
+  }
+}
