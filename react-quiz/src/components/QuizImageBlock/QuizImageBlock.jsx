@@ -3,7 +3,7 @@ import quizImage from "/quiz-image.jpg"
 function QuizImageBlock() {
   return (
     <>
-      <img src={quizImage} alt="" />
+      <img src={quizImage} alt="image" title="image" />
     </>
   );
 }

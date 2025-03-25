@@ -1,0 +1,17 @@
+.answerBlock {
+  padding: 15px;
+  border-radius: 16px;
+  background: #4287f5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &:hover {
+    background: #424ef5;
+    transition: 0.5s;
+  }
+}

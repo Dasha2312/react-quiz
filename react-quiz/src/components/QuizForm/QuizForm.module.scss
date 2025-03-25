@@ -1,0 +1,22 @@
+.QuizForm {
+  &__contentBottom {
+    margin: 30px auto 0;
+    max-width: 230px;
+  }
+  &__button {
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 16px;
+    background: #0006b1;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      transition: 0.5s;
+      background: #0021f3;
+    }
+  }
+}

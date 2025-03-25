@@ -1,0 +1,28 @@
+.form {
+  &__block {
+    margin-bottom: 15px;
+  }
+    &__input {
+      width: 100%;
+      border-radius: 16px;
+      padding: 15px;
+      background: #fff;
+      color: #000;
+      border: 1px solid #cacbcf;
+      transition: 0.5s;
+      min-height: 48px;
+    &:focus {
+      border: 1px solid #000;
+      transition: 0.5s;
+    }
+  }
+  &__inputError {
+    border: 1px solid #bf1650;
+    &::placeholder {
+      color: #bf1650;
+    }
+    &:focus {
+      border: 1px solid #bf1650;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.inputPhoneBlock {
+  width: 100%;
+  &__input {
+    width: 100% !important;
+    border-radius: 16px !important;
+    padding: 15px;
+    background: #fff !important;
+    color: #000;
+    border: 1px solid #cacbcf !important;
+    transition: 0.5s;
+    height: auto !important;
+    line-height: 1 !important;
+    &:focus {
+      border: 1px solid #000 !important;
+      transition: 0.5s;
+    }
+  }
+  &__inputError {
+    border: 1px solid #bf1650 !important;
+    &::placeholder {
+      color: #bf1650;
+    }
+  }
+  &__dropdown {
+    width: 100%;
+    text-align: left;
+  }
+  &__dropdownBtn {
+    border: 0 !important;
+    background: transparent !important;
+    &.open {
+      background: transparent !important;
+      border-radius: none !important;
+    }
+  }
+}
