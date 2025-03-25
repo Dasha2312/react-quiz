@@ -13,15 +13,15 @@ const questions = [
     answers: [
       {
         id: 1,
-        title: 'answer #1 for question #1'
+        title: 'cat'
       },
       {
         id: 2,
-        title: 'answer #2 for question #1'
+        title: 'dog'
       },
       {
         id: 3,
-        title: 'answer #3 for question #1'
+        title: 'chicken'
       },
     ]
   },
@@ -31,15 +31,15 @@ const questions = [
     answers: [
       {
         id: 1,
-        title: 'answer #1 for question #2'
+        title: 'beet'
       },
       {
         id: 2,
-        title: 'answer #2 for question #2'
+        title: 'potato'
       },
       {
         id: 3,
-        title: 'answer #3 for question #2'
+        title: 'tomato'
       },
     ]
   },
@@ -49,15 +49,15 @@ const questions = [
     answers: [
       {
         id: 1,
-        title: 'answer #1 for question #3'
+        title: 'zebra'
       },
       {
         id: 2,
-        title: 'answer #2 for question #3'
+        title: 'lion'
       },
       {
         id: 3,
-        title: 'answer #3 for question #3'
+        title: 'crocodile'
       },
     ]
   },
@@ -67,15 +67,15 @@ const questions = [
     answers: [
       {
         id: 1,
-        title: 'answer #1 for question #4'
+        title: 'cockatoo'
       },
       {
         id: 2,
-        title: 'answer #2 for question #4'
+        title: 'flamingo'
       },
       {
         id: 3,
-        title: 'answer #3 for question #4'
+        title: 'rhinoceros'
       },
     ]
   },
@@ -85,15 +85,15 @@ const questions = [
     answers: [
       {
         id: 1,
-        title: 'answer #1 for question #5'
+        title: 'elephant'
       },
       {
         id: 2,
-        title: 'answer #2 for question #5'
+        title: 'cow'
       },
       {
         id: 3,
-        title: 'answer #3 for question #5'
+        title: 'milk'
       },
     ]
   },
@@ -104,7 +104,6 @@ function QuestionBlock() {
   const [answerArray, setAnswerArray] = useState([]);
   
   const {sendQuizMutation, sendQuizPending} = SendQuizMutation();
-  console.log('isPending', sendQuizPending)
 
   const {register, handleSubmit, control, formState: { errors }, setValue} = useForm({
     defaultValues: {
@@ -128,9 +127,7 @@ function QuestionBlock() {
   }
 
   function onSubmit(data) {
-    console.log(data);
     const quizResult = {...data, answers: answerArray}
-    console.log(quizResult)
 
     sendQuizMutation(quizResult, {
       //for text you can change it on onSettled

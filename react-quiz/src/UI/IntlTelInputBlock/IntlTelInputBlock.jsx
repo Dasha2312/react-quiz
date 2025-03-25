@@ -40,7 +40,8 @@ function IntlTelInputBlock({control, Controller, disabled}) {
               inputProps={{
                 autoFocus: false,
                 name,
-                ref
+                ref,
+                autoComplete: 'off',
               }}
               country={"ua"}
             />

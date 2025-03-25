@@ -1,12 +1,27 @@
 .QuizBlock {
   display: flex;
+  @media (max-width: 991px) {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   &__left {
     max-width: 30%;
     flex: 1;
     padding-top: 50px;
+    @media (max-width: 767px) {
+      width: 100%;
+      max-width: 80%;
+    }
+    @media (max-width: 575px) {
+      max-width: 100%;
+    }
   }
   &__right {
     max-width: 70%;
     flex: 1;
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
   }
 }
